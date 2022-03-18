@@ -1,4 +1,5 @@
-const baseUrl = "http://localhost:3001";
+// const baseUrl = "http://localhost:3001";
+const baseUrl = 'http://api.mesto.vstrechi.nomoredomains.work';
 
 function checkResponse(res) {
     if (res.ok) {
