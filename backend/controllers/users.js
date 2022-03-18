@@ -1,7 +1,10 @@
+require('dotenv').config(); // модуль для переменных окружения
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { NotFoundError, ConflictError, BadRequestError } = require('../errors');
 const User = require('../models/user');
+
+const { NODE_ENV, JWT_SECRET } = process.env;
 
 const getUsers = (req, res, next) => {
   User.find({})
@@ -108,7 +111,7 @@ const login = (req, res, next) => {
   return User.findUserByCredentials(email, password)
     .then((user) => {
       // создаём токен, записываем id в пейлоуд
-      const token = jwt.sign({ _id: user._id }, 'some-secret-key', { expiresIn: '7d' });
+      const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret', { expiresIn: '7d' });
       // записываем токен в тело ответа
       res.status(200).send({ token }); // возвращаем токен, который будем пробрасывать в запросы
 
