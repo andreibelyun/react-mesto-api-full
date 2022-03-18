@@ -85,7 +85,7 @@ class Api {
 
 const api = new Api({
     // baseUrl: 'http://localhost:3001',
-    baseUrl: 'http://api.mesto.vstrechi.nomoredomains.work',
+    baseUrl: 'https://api.mesto.vstrechi.nomoredomains.work',
     headers: {
         // 'Authorization': ' ',
         'Content-Type': 'application/json'
