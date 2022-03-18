@@ -1,0 +1,65 @@
+.tooltip {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 1s, opacity 1s;
+}
+
+.tooltip_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip__container {
+    width: 430px;
+    min-height: 330px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.tooltip__close {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../../images/close-icon.svg");
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    position: absolute;
+    top: -40px;
+    right: -35px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip__close:hover {
+    cursor: pointer;
+}
+
+.tooltip__image {
+    margin: 60px auto 32px;
+    object-fit: cover;
+}
+
+.tooltip__message {
+    width: 358px;
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+}

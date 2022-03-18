@@ -1,0 +1,16 @@
+.profile__avatar-overlay {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__avatar-overlay:hover {
+    cursor: pointer;
+    opacity: 1;
+}

@@ -1,0 +1,12 @@
+.popup__container_type_photo {
+    width: max-content;
+    height: max-content;
+    min-height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    box-shadow: none;
+}

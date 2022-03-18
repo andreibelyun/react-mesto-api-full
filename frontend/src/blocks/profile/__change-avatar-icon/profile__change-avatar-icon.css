@@ -1,0 +1,7 @@
+.profile__change-avatar-icon {
+    background-image: url('../../../images/edit-avatar-button.svg');
+    position: absolute;
+    z-index: 2;
+    width: 26px;
+    height: 26px;
+}

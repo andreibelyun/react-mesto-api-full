@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__right-group {
+    display: flex;
+    align-items: center;
+}
+
+.header__email {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    margin-right: 24px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: Inter;
+    transition: opacity 1s linear;
+}
+
+.header__link:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.header__link_type_sign-out {
+    color: #A9A9A9;
+}

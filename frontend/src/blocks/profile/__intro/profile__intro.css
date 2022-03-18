@@ -1,0 +1,16 @@
+.profile__intro {
+    display: grid;
+    margin-left: 30px;
+    grid-template-areas:  "name edit"
+    "description description";
+    row-gap: 8px;
+    column-gap: 18px;
+}
+
+@media  screen and (max-width: 1279px) {
+    .profile__intro {
+        margin-top: 26px;
+        row-gap: 10px;
+        column-gap: 12px;
+    }
+}

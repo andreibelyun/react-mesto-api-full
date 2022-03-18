@@ -1,0 +1,16 @@
+.card__like {
+    background-color: #fff;
+    background-image: url('../../../images/like-button_disabled.svg');
+    background-size: auto;
+    width: 22px;
+    height: 19px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    transition: opacity 1s ease-out;
+}
+
+.card__like:hover {
+    cursor: pointer;
+    opacity: .5;
+}
