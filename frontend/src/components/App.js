@@ -139,7 +139,6 @@ function App() {
                 setLoggedIn(true);
                 api._headers['Authorization'] = `Bearer ${data.token}`;
                 history.push("/");
-                console.log(api);
                 // добавляем заголовок authorization в headers api
                 // api.headers['Authorization'] = `Bearer ${data.token}`;
                 // console.log(api);
