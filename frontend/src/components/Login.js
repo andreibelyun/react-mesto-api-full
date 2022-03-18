@@ -1,4 +1,4 @@
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import './styles/Login.css';
 
 export default function Login({ onLogin }) {
