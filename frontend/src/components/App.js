@@ -137,11 +137,9 @@ function App() {
                 setEmail(username);
                 localStorage.setItem("jwt", data.token);
                 setLoggedIn(true);
+                // добавляем заголовок authorization в headers api
                 api._headers['Authorization'] = `Bearer ${data.token}`;
                 history.push("/");
-                // добавляем заголовок authorization в headers api
-                // api.headers['Authorization'] = `Bearer ${data.token}`;
-                // console.log(api);
             })
             .catch(() => {
                 setTooltip({

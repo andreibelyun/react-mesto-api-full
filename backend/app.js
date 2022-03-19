@@ -22,9 +22,6 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
 });
 
 app.use(cors());
-// app.use(cors({
-//   origin: 'http://localhost:3000',
-// }));
 
 app.use(express.json());
 
@@ -46,10 +43,10 @@ app.use(auth);
 app.use('/users', userRoutes);
 app.use('/cards', cardsRoutes);
 
-app.use(errorLogger);
-
 // если не users и не cards
 app.use((req, res, next) => { next(new NotFoundError('Ресурс не найден')); });
+
+app.use(errorLogger);
 
 app.use(errors());
 
