@@ -7,7 +7,7 @@
 
 Ссылка на сайт: https://mesto.vstrechi.nomoredomains.work/.
 
-Публичный IP-адрес сервера: 62.84.126.64.
+Публичный IP-адрес сервера: 62.84.117.247.
 
 Фронтенд часть проекта размещена на основном домене `mesto.vstrechi.nomoredomains.work`, бэкенд часть проекта размещена на поддомене: `api.mesto.vstrechi.nomoredomains.work`.
 
